@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="10/22/22||23:36:08" using="Simscape Multibody Link Version 7.0" from="SolidWorks 28.0.0"/>
+<ModelUnits mass="kilogram" length="inch"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="" uid="" version="121">
+<AssemblyFile name="" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Base-1" uid="Base-1" entityUid="Base*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.31933993343214456 0.56990263476460679 0.85939630124045974</Translation>
+</Transform>
+</Instance>
+<Instance name="Surface-1" uid="Surface-1" grounded="true" entityUid="Surface*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.34097412003425481 0.54390263476460676 0.76965030130645562</Translation>
+</Transform>
+</Instance>
+<Instance name="Pend2-1" uid="Pend2-1" entityUid="Pend2*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.31933993343214456 0.85026252738951114 0.87339630124045975</Translation>
+</Transform>
+</Instance>
+<Instance name="Pend1-1" uid="Pend1-1" entityUid="Pend1*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.31933993343214456 0.65236813676541205 0.87039630124045564</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Surface-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Base-1</Uid>
+</InstancePath>
+<Position>0.042500000000000038 -0.026000000000000023 -0.07999999999999996</Position>
+<Axis>1.6326809185664065e-16 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Surface-1</Uid>
+</InstancePath>
+<Position>-0.5 0 0.089745999934000009</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Base-1</Uid>
+</InstancePath>
+<Position>-0.042499999999999982 -0.026000000000000023 0</Position>
+<Axis>1 1.6326809185664065e-16 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Base-1</Uid>
+</InstancePath>
+<Position>0 0.0038956607686755351 0.014000000000000012</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Pend1-1</Uid>
+</InstancePath>
+<Position>0 -0.078569841232129622 0.0030000000000000027</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Base-1</Uid>
+</InstancePath>
+<Position>0 0.0038956607686755351 0.014000000000000012</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Pend1-1</Uid>
+</InstancePath>
+<Position>0 -0.078569841232129622 0.0030000000000000027</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Pend1-1</Uid>
+</InstancePath>
+<Position>0 0.083254046901719003 0.0060000000000000053</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Pend2-1</Uid>
+</InstancePath>
+<Position>0 -0.11464034372238008 0.0030000000000000027</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Pend1-1</Uid>
+</InstancePath>
+<Position>0 0.083254046901719003 0.0060000000000000053</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Pend2-1</Uid>
+</InstancePath>
+<Position>0 -0.11464034372238008 0.0030000000000000027</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Base" uid="Base*:*Default" version="116">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Base.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.35369896016858809</Mass>
+<CenterOfMass>0 1.0899530104571127e-06 -0.03998685003789261</CenterOfMass>
+<Inertia>0.00026848624861453127 0.00040170354719810367 0.00029257614607995083 -1.8114147071337068e-08 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Base_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Pend1" uid="Pend1*:*Default" version="111">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Pend1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.011148364799999999</Mass>
+<CenterOfMass>0 0.00030781168754204252 0.0015057064199437743</CenterOfMass>
+<Inertia>3.109507921117939e-05 3.921506441599143e-07 3.1470126330685403e-05 -5.2768114846337662e-09 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Pend1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Pend2" uid="Pend2*:*Default" version="105">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Pend2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.01546263424958827</Mass>
+<CenterOfMass>0 0.00015721994563490209 0.0015</CenterOfMass>
+<Inertia>8.2978793327812396e-05 5.4436127222058468e-07 8.3499960648658597e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Pend2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Surface" uid="Surface*:*Default" version="117">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Surface.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.36152401639799991</Mass>
+<CenterOfMass>0 -0.00098946116766194256 0.049999998240738044</CenterOfMass>
+<Inertia>0.00037515360280017678 0.030501424341338779 0.030127731994461407 1.583335762163416e-12 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Surface_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
